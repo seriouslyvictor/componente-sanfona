@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    padding: 20px 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.c--sanfona {
+    display: grid;
+    grid-template-columns: 50px 1fr 50px;
+    column-gap: 20px;
+    border: 0.5px solid rgba(0, 0, 0, 0.396);
+    position: relative;
+    border-radius: 9px;
+    /* max-height: fit-content; */
+    cursor: pointer;
+    padding: 5px 10px;
+
+}
+
+.n--sanfona {
+    color: #616161;
+    align-self: center;
+    font-size: 50px;
+}
+
+.i--sanfona {
+    color: #616161;
+    font-size: 50px;
+    align-self: center;
+}
+
+.desc--sanfona {
+    max-height: 0;
+    opacity: 0;
+    visibility: hidden;
+    padding: 0px 15px;
+}
+
+.aberta .desc--sanfona {
+    max-height: 1000px;
+    opacity: 1;
+    visibility: visible;
+    transition: 0.5s;
+    margin-top: 25px;
+    grid-column: span 3;
+}
+
+.aberta .n--sanfona,
+.aberta .i--sanfona  {
+    color: #228be6;
+}
+
+.aberta .t--sanfona {
+    color: #1864ab;
+}
+
+.aberta {
+    border-top: 3px solid #228be6;
+}

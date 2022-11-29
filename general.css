@@ -1,0 +1,11 @@
+h1 {
+    color: black
+}
+
+div>h1 {
+    color: white !important;
+}
+
+div !important #texto {}
+
+div>img

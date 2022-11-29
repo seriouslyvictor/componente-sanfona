@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    padding: 20px 200px;
+}
+
+.c--sanfona {
+    border: 2px solid black;
+    position: relative;
+    border-radius: 9px;
+    max-height: fit-content;
+
+}
+
+.n--sanfona {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 50px;
+}
+
+.i--sanfona {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 50px;
+}
+
+.t--sanfona {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.desc--sanfona {
+    max-height: 0;
+    opacity: 0;
+    visibility: hidden;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.aberta {
+    max-height: 1000px;
+    opacity: 1;
+    visibility: visible;
+    transition: 1s;
+    margin-top: 25px;
+}
+
+.rotate {
+    transform: rotate(-90deg);
+    transition: 0.4s;
+    top: 50%;
+}
